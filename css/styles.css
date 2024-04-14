@@ -10921,7 +10921,7 @@ p {
   }
   #mainNav .navbar-brand img {
     height: 10rem;
-    transition: height 0.3s ease-in-out;
+    transition: height 4s ease-in-out;
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
