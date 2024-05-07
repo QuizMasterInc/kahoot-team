@@ -27,31 +27,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <button class="btn btn-light" id="mode-toggle">Light Mode</button>
-                  <style>
-                    body {
-                        background-color: #fff; 
-                        color: #000;
-                    }
-
-                    body.dark-mode{
-                        background-color: #333;
-                        color: #fff;
-                    }
-                  </style>
-                  <script>
-                    const modeToggle = document.getElementById('mode-toggle');
-                    const body = document.body;
-
-                    modeToggle.addEventListener('click', () => {
-                        if (body.classList.contains('dark-mode')) {
-                            body.classList.remove('dark-mode');
-                            modeToggle.textContent = 'Light Mode';
-                        } else {
-                            body.classList.add('dark-mode');
-                            modeToggle.textContent = 'Dark Mode';
-                        }
-                    });
-                  </script>
                 </div>
             </div>
         </nav>
@@ -476,5 +451,19 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+
+            modeToggle.addEventListener('click', () => {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    modeToggle.textContent = 'Light Mode';
+                } else {
+                    body.classList.add('dark-mode');
+                    modeToggle.textContent = 'Dark Mode';
+                }
+            });
+          </script>
     </body>
 </html>
